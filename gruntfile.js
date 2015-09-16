@@ -18,16 +18,37 @@ module.exports = function(grunt) {
         }
       }
     },
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: './src/css',
+          src: ['*.css'],
+          dest: './',
+          ext: '.min.css'
+        }]
+      }
+    },
     watch: {
-      files: ['<%= jshint.files %>', 'index.html', 'style.css'],
-      tasks: ['jshint', 'requirejs']
+      files: ['<%= jshint.files %>', 'index.html', './src/css/style.css'],
+      tasks: ['jshint', 'requirejs', 'cssmin']
+    },
+    connect: {
+      server: {
+        options: {
+          port: 8000,
+          keepalive: true
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['jshint', 'requirejs']);
+  grunt.registerTask('default', ['jshint', 'requirejs', 'cssmin', 'connect']);
 
 };
