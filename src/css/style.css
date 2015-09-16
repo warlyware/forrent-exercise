@@ -162,7 +162,7 @@ body {
   width: 12.5%;
   z-index: 100;
   left: 33.4%;
-  background-color: #631CC1;
+  background: linear-gradient(#7C23FE, #541A97);
 }
 
 .box-green {
