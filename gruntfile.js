@@ -7,7 +7,6 @@ module.exports = function(grunt) {
     },
     requirejs: {
       compile: {
-        // !! You can drop your app.build.js config wholesale into 'options'
         options: {
           mainConfigFile:'./src/scripts/main.js',
           baseUrl: "./src/scripts",
