@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
   /*max-width: 1280px;*/
-  padding-top: 20px;
+  padding-top: 60px;
   width: 85%;
 }
 
@@ -34,7 +34,6 @@ body {
   margin-right: auto;
   height: 115px;
   background-color: #00B7EF;
-  display: block;
   z-index: 200;
   position: relative;
 }
@@ -48,7 +47,6 @@ body {
   height: 125px;
   background-color: #000000;
   float: right;
-  display: block;
 }
 
 .box-purple {
@@ -90,4 +88,15 @@ body {
   height: 125px;
   float: right;
   background-color: #E81799;
+}
+
+.overlay {
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 500;
 }
