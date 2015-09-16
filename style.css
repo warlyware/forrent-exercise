@@ -10,8 +10,8 @@ body {
 }
 
 .row {
-  margin-top: 10px;
-  height: 102px;
+  padding-top: 10px;
+  /*height: 102px;*/
 }
 
 .box-orange {
@@ -22,17 +22,17 @@ body {
 
 .box-red {
   width: 14%;
-  height: 100px;
+  height: 125px;
   background-color: red;
   float: left;
   display: block;
 }
 
 .box-blue {
-  width: 70%;
+  width: 69.6%;
   margin-left: auto;
   margin-right: auto;
-  height: 92px;
+  height: 115px;
   background-color: blue;
   display: block;
   z-index: 200;
@@ -40,23 +40,23 @@ body {
 }
 
 .box-blue-wrapper {
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
 .box-black {
   width: 14%;
-  height: 100px;
+  height: 125px;
   background-color: black;
   float: right;
   display: block;
 }
 
 .box-purple {
-  height: 350px;
+  height: 395px;
   position: fixed;
-  width: 12%;
+  width: 13%;
   z-index: 100;
-  left: 34%;
+  left: 33.15%;
   background-color: purple;
 }
 
@@ -64,7 +64,7 @@ body {
   background-color: green;
   display: block;
   margin: 0 auto;
-  height: 100px;
+  height: 125px;
   width: 93%;
   z-index: -100;
 }
@@ -80,14 +80,14 @@ body {
 .box-grey {
   margin-left: 10%;
   float: left;
-  width: 18%;
-  height: 100px;
+  width: 19.6%;
+  height: 125px;
   background-color: grey;
 }
 
 .box-magenta {
-  width: 52.7%;
-  height: 100px;
+  width: 53.9%;
+  height: 125px;
   float: right;
   background-color: magenta;
 }
