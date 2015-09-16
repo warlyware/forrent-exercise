@@ -21,7 +21,7 @@ body {
 }
 
 .box-red {
-  width: 20%;
+  width: 14%;
   height: 100px;
   background-color: red;
   float: left;
@@ -29,24 +29,35 @@ body {
 }
 
 .box-blue {
-  width: 55%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   height: 92px;
   background-color: blue;
   display: block;
+  z-index: 200;
+  position: relative;
 }
 
 .box-blue-wrapper {
-  margin-top: 8px;
+  padding-top: 8px;
 }
 
 .box-black {
-  width: 20%;
+  width: 14%;
   height: 100px;
   background-color: black;
   float: right;
   display: block;
+}
+
+.box-purple {
+  height: 350px;
+  position: fixed;
+  width: 12%;
+  z-index: 100;
+  left: 34%;
+  background-color: purple;
 }
 
 .box-green {
@@ -54,26 +65,29 @@ body {
   display: block;
   margin: 0 auto;
   height: 100px;
-  width: 70%;
+  width: 93%;
+  z-index: -100;
 }
 
 .box-yellow {
   width: 100%;
   height: 100px;
   background-color: yellow;
+  z-index: 200;
+  position: relative;
 }
 
 .box-grey {
-  margin-left: 20%;
+  margin-left: 10%;
   float: left;
-  width: 16%;
+  width: 18%;
   height: 100px;
   background-color: grey;
 }
 
-.box-pink {
-  width: 40%;
+.box-magenta {
+  width: 52.7%;
   height: 100px;
   float: right;
-  background-color: pink;
+  background-color: magenta;
 }
