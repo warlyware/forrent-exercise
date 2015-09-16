@@ -1,6 +1,5 @@
 body {
   margin: 0 auto;
-  /*max-width: 1280px;*/
   padding-top: 60px;
   width: 85%;
 }
@@ -101,12 +100,10 @@ body {
 @keyframes slidein {
   from {
     margin-left: 100%;
-    /*width: 300%;*/
   }
 
   to {
     margin-left: 0;
-    /*width: 100%;*/
   }
 }
 
@@ -120,7 +117,6 @@ body {
 
 .row {
   padding-top: 10px;
-  /*height: 102px;*/
 }
 
 .box-orange {
